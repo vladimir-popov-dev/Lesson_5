@@ -2,18 +2,5 @@ from divisor_master import *
 import pytest
 
 
-@pytest.fixture()
-def some_data_in():
-    """Return answer to ultimate question."""
-    return 11
-
-@pytest.fixture()
-def some_data_out():
-    """Return answer to ultimate question."""
-    return False
-
-def test_ispime_digit(some_data_in, some_data_out):
-    """
-    Функция isPrime должна возвращать число.
-    """
-    assert isprime(some_data_in) == some_data_out()
+def test_isprime_isnumbaer():
+    assert isprime(11) == 1
