@@ -3,4 +3,4 @@ import pytest
 
 
 def test_isprime_isnumbaer():
-    assert isprime(11) == 1
+    assert isprime(11) == False
